@@ -1,4 +1,4 @@
-\# Telco Customer Churn Prediction \& Risk Segmentation
+# Telco Customer Churn Prediction \& Risk Segmentation
 
 \- Project Overview
 
@@ -285,4 +285,5 @@ Translating ML Output into Business Strategy
 
 
 Neha Raut
+
 
