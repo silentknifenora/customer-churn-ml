@@ -126,11 +126,9 @@ Data-backed churn mitigation strategies
 Revenue protection through early intervention
 
 # Model Performance Visuals
-
-Include screenshots in an images folder:
-
+Confusion Matrix
 ![Confusion Matrix](images/confusion_matrix.png)
-
+Feature Importance
 ![Feature Importance](images/feature_importance.png)
 # Skills Demonstrated
 
@@ -147,3 +145,4 @@ Translating ML Outputs into Business Insights
 # Author
 
 Neha Raut
+
