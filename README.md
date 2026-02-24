@@ -1,6 +1,6 @@
 # Telco Customer Churn Prediction \& Risk Segmentation
 
-\- Project Overview
+- Project Overview
 
 
 
@@ -26,7 +26,7 @@ The goal was not only to maximize accuracy, but to improve churn recall, ensurin
 
 
 
-\# Tech Stack
+# Tech Stack
 
 
 
@@ -34,7 +34,7 @@ Python | Pandas | NumPy | Scikit-learn | Matplotlib | Seaborn
 
 
 
-\# Key ML Concepts
+# Key ML Concepts
 
 
 
@@ -58,7 +58,7 @@ Feature Importance Analysis
 
 
 
-\# Dataset
+# Dataset
 
 
 
@@ -90,9 +90,9 @@ Target Variable: Churn (Yes=1, No=0)
 
 
 
-\# Methodology
+# Methodology
 
-1\. Data Preprocessing
+1. Data Preprocessing
 
 
 
@@ -112,7 +112,7 @@ Standardized numeric features using StandardScaler
 
 
 
-2\. Train-Test Split
+2. Train-Test Split
 
 
 
@@ -120,7 +120,7 @@ Standardized numeric features using StandardScaler
 
 
 
-3\. Model Development
+3. Model Development
 
 
 
@@ -156,7 +156,7 @@ Accuracy ≈ 83–86%
 
 
 
-4\. Model Evaluation
+4. Model Evaluation
 
 
 
@@ -172,7 +172,7 @@ Focus on churn recall (minority class performance)
 
 
 
-5\. Feature Importance Analysis
+5. Feature Importance Analysis
 
 
 
@@ -184,7 +184,7 @@ Helps understand which variables contribute most to churn
 
 
 
-\# Key Results
+# Key Results
 
 Model	Accuracy	Churn Recall	Churn Precision
 
@@ -222,7 +222,7 @@ Short-tenure customers with higher monthly charges and month-to-month contracts 
 
 
 
-\# Business Impact
+# Business Impact
 
 
 
@@ -246,7 +246,7 @@ Allows businesses to intervene before revenue loss
 
 
 
-\# Model Performance Visuals
+# Model Performance Visuals
 
 Confusion Matrix
 
@@ -256,7 +256,7 @@ Feature Importance
 
 
 
-\# Skills Demonstrated
+# Skills Demonstrated
 
 
 
@@ -280,10 +280,11 @@ Translating ML Output into Business Strategy
 
 
 
-\# Author
+# Author
 
 
 
 Neha Raut
+
 
 
