@@ -1,290 +1,149 @@
-# Telco Customer Churn Prediction \& Risk Segmentation
-
+# Telco Customer Churn Prediction & Risk Segmentation
 - Project Overview
-
-
 
 Customer churn directly impacts recurring revenue in subscription-based businesses.
 
-This project builds predictive models to identify telecom customers at high risk of churn and translates model outputs into actionable retention strategies.
+This project builds machine learning classification models to predict high-risk telecom customers and translate model outputs into actionable retention strategies.
 
+Two models were developed and compared:
 
-
-Two classification models were developed:
-
-
-
-Logistic Regression – baseline linear model
-
-
+Logistic Regression – interpretable baseline model
 
 Random Forest – non-linear ensemble model
 
+The objective was not only to maximize overall accuracy, but to improve churn recall, ensuring high-risk customers are correctly identified for proactive intervention.
 
+# Business Objectives
 
-The goal was not only to maximize accuracy, but to improve churn recall, ensuring high-risk customers are correctly identified.
+Identify customers at high risk of churn
 
+Improve recall for the churn (minority) class
 
+Understand key drivers influencing churn behavior
+
+Enable data-driven customer retention strategies
 
 # Tech Stack
 
-
-
-Python | Pandas | NumPy | Scikit-learn | Matplotlib | Seaborn
-
-
-
-# Key ML Concepts
-
-
-
-Feature Engineering
-
-
-
-One-Hot Encoding
-
-
-
-Feature Scaling
-
-
-
-Model Evaluation (Precision, Recall, F1)
-
-
-
-Feature Importance Analysis
-
-
+Python
+Pandas & NumPy
+Scikit-learn
+Matplotlib & Seaborn
 
 # Dataset
 
+Telco Customer Churn Dataset
+7,032 customer records
 
-
-Telco Customer Churn dataset – 7,032 customers
-
-
-
-Key variables include:
-
-
+Key Features:
 
 Demographics: Gender, SeniorCitizen, Partner, Dependents
 
-
-
-Account Info: Tenure, Contract type, Payment method
-
-
+Account Information: Tenure, Contract Type, Payment Method
 
 Financial Metrics: MonthlyCharges, TotalCharges
 
-
-
 Service Usage: InternetService
 
-
-
-Target Variable: Churn (Yes=1, No=0)
-
-
+Target Variable: Churn (Yes = 1, No = 0)
 
 # Methodology
-
 1. Data Preprocessing
-
-
 
 Removed non-informative identifiers (customerID)
 
-
-
-Converted Churn into binary format (Yes=1, No=0)
-
-
+Converted churn to binary format (1 = Yes, 0 = No)
 
 Applied One-Hot Encoding to categorical variables
 
-
-
 Standardized numeric features using StandardScaler
-
-
 
 2. Train-Test Split
 
-
-
-80/20 split to evaluate model generalization
-
-
+80/20 split to evaluate generalization performance
 
 3. Model Development
-
-
-
 Model 1: Logistic Regression
 
+Interpretable linear classifier
 
-
-Baseline linear classifier
-
-
-
-Interpretable coefficients
-
-
+Baseline performance benchmark
 
 Accuracy ≈ 78.7%
 
-
-
 Model 2: Random Forest
-
-
 
 Captures non-linear feature interactions
 
-
-
 Reduced bias compared to baseline
 
-
-
-Accuracy ≈ 83–86%
-
-
+Accuracy ≈ 84–86%
 
 4. Model Evaluation
 
-
-
 Confusion Matrix
-
-
 
 Precision, Recall, F1-score
 
-
-
-Focus on churn recall (minority class performance)
-
-
+Emphasis on Churn Recall (minority class performance)
 
 5. Feature Importance Analysis
 
-
-
 Extracted top churn drivers using Random Forest
 
-
-
-Helps understand which variables contribute most to churn
-
-
+Identified variables contributing most to churn probability
 
 # Key Results
-
 Model	Accuracy	Churn Recall	Churn Precision
-
 Logistic Regression	78.7%	52%	62%
-
 Random Forest	~84%	65–70%	68%
-
-
-
-Top Churn Drivers Identified:
-
-
+# Top Churn Drivers Identified:
 
 Contract Type
 
-
-
 Monthly Charges
-
-
 
 Tenure
 
-
-
 Total Charges
-
-
 
 Internet Service
 
-
-
-Short-tenure customers with higher monthly charges and month-to-month contracts had the highest churn probability.
-
-
+Short-tenure customers with higher monthly charges and month-to-month contracts exhibited the highest churn probability.
 
 # Business Impact
 
+This model enables:
 
+Proactive retention targeting
 
-Enables proactive retention targeting
+Risk-based customer segmentation
 
+Prioritized outreach to high-risk accounts
 
+Data-backed churn mitigation strategies
 
-Supports risk-based customer segmentation
-
-
-
-Helps prioritize outreach to high-risk accounts
-
-
-
-Provides interpretable drivers for churn mitigation strategies
-
-
-
-Allows businesses to intervene before revenue loss
-
-
+Revenue protection through early intervention
 
 # Model Performance Visuals
 
-Confusion Matrix
+Include screenshots in an images folder:
 
+![Confusion Matrix](images/confusion_matrix.png)
 
-
-Feature Importance
-
-
-
+![Feature Importance](images/feature_importance.png)
 # Skills Demonstrated
 
+End-to-End Machine Learning Workflow
 
-
-End-to-End ML Workflow
-
-
-
-Data Cleaning \& Feature Engineering
-
-
+Data Cleaning & Feature Engineering
 
 Classification Modeling
 
+Model Evaluation & Trade-off Analysis
 
-
-Model Evaluation \& Performance Tradeoffs
-
-
-
-Translating ML Output into Business Strategy
-
-
+Translating ML Outputs into Business Insights
 
 # Author
 
-
-
 Neha Raut
-
-
-
